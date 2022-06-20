@@ -1,0 +1,11 @@
+header h1 {
+	font-size: 3rem;
+}
+header h1 a {
+	display: block;
+	padding: 0.4rem;
+	margin-left: -0.4rem;
+}
+header h1 a img {
+	display: block;
+}

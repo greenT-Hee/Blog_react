@@ -1,0 +1,7 @@
+.categories li a {
+	background: var(--gray-background);
+	color: var(--gray-text);
+	font-size: 1.2rem;
+	border-radius: calc(var(--border-radius) * 2);
+	padding: 0.2rem 1.2rem;
+}
