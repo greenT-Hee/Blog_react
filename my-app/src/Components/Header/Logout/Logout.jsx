@@ -4,7 +4,11 @@ import logoutImg from '../../../assets/icon-logout.svg'
 
 function Logout() {
   return (
-    <li><button className='button white'><img src={logoutImg} alt="로그아웃이미지" /><span>Logout</span></button></li>
+    <li id="logout">
+      <button className='button white'>
+        <img src={logoutImg} alt="로그아웃이미지" />
+        <span>Logout</span></button>
+    </li>
   )
 }
 

@@ -9,7 +9,7 @@ export default function Post(props) {
     <li>
       <a href="post-view.html" className="post">
         <article>
-          <img src={props.thumbnailSrc} alt="썸네일" />
+          <img src={"../.." + props.thumbnailSrc} alt="썸네일" />
         </article>
         <div className="contents-wrap">
           <Category category={props.category}/>

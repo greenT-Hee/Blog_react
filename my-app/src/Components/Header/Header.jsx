@@ -2,7 +2,11 @@ import Profile from './Profile/Profile'
 import Logo from './Logo/Logo'
 import WriteButton from './WriteButton/WriteButton'
 import Logout from './Logout/Logout'
+import Login from './Login/Login'
 import './header.css'
+import Register from './Resgiter/Register'
+import { useState } from 'react'
+
 
 
 export default function Header() {
@@ -12,8 +16,10 @@ export default function Header() {
       <Logo />
       <ul>
           <Profile/>
-          <WriteButton/>
-          <Logout/>
+          {/* <WriteButton/>
+          <Logout/> */}
+          <Login/>
+          <Register />
       </ul>
       </div>
     </header>

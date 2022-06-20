@@ -3,7 +3,7 @@ import "./writeButton.css"
 
 export default function WriteButton() {
   return (
-    <li>
+    <li id='writeBtn'>
         <a className='button'  href="#">
             <img src={writeBtn} alt="" />
             <span>Write</span>
