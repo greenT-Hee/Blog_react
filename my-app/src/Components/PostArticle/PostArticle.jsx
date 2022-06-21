@@ -3,6 +3,7 @@ import Contents from './Contents/Contents'
 import Author from './Author/Author'
 import Title from './Title/Title'
 import Category from './Category/Category'
+import { Link } from 'react-router-dom'
 
 export default function PostArticle() {
   return (
@@ -22,9 +23,9 @@ export default function PostArticle() {
                             <span className='a11y-hidden'>delete</span>
                         </button>
                     </div>
-                    <a href="./" className='btn-back'>
+                    <Link to ="/" className='btn-back'>
                         <span className='a11y-hidden'>back</span>
-                    </a>
+                    </Link>
                 </div>
             </section>
         </div>
