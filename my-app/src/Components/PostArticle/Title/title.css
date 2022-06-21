@@ -1,0 +1,39 @@
+/* title */
+.view .wrap-box .author-wrap {
+	height: 6.4rem;
+	font-size: 1.4rem;
+}
+.title-wrap {
+	display: flex;
+	align-items: flex-end;
+	justify-content: space-between;
+	gap: 8rem;
+	margin-bottom: 1rem;
+	font-size: 1.6rem;
+}
+.title-wrap h2 {
+	width: 100%;
+	text-transform: none;
+}
+
+.wrap-box hr {
+	border: 1px solid var(--border-color);
+	border-width: 1px 0 0 0;
+	margin: 3.2rem 0;
+}
+
+
+@media (max-width: 1024px) {
+	.title-wrap {
+		flex-direction: column;
+		gap: 2rem;
+	}
+}
+
+.title-wrap h2 {
+	font-size: 3.2rem;
+	font-weight: bold;
+}
+.title-wrap button {
+	flex-shrink: 0;
+}
