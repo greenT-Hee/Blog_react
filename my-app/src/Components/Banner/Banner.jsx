@@ -16,6 +16,7 @@ function Banner() {
       setBanner(data.blog)
     })
   },[])
+
   return (
     <div className='banner'>
         <div className='max-width'>

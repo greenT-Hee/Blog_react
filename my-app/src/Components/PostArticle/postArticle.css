@@ -128,8 +128,6 @@
 }
 
 
-
-
 /*버튼*/
 /* 뒤로가기 */
 .btn-back {
@@ -182,3 +180,5 @@
 .btn-delete:hover {
 	background: var(--red-color) url(../../assets/icon-delete-white.svg) no-repeat 50% 50% / 1.6rem;
 }
+
+
