@@ -4,7 +4,7 @@ import { useEffect , useState  } from "react"
 // import { Data } from "../../data"
 
 export default function Posts() {
-  const [dummy, setDummy] = useState([])
+  const [post, setPost] = useState([])
 
   useEffect(()=>{
     fetch("https://greent-hee.github.io/Blog_react/my-app/public/data.json")
@@ -12,13 +12,13 @@ export default function Posts() {
       return res.json()
     })
     .then(data => {
-     setDummy(data.posts)
+     setPost(data.posts)
     })
   },[])
     return (
       <ul className="posts">
         {
-          dummy.map(item => {
+          post.map(item => {
           return <Post 
             key = {item.id}
             thumbnailSrc = {item.thumbnail}

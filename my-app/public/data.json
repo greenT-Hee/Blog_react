@@ -35,7 +35,7 @@
 			"title": "Esse deserunt ducimus earum provident iste eaque dolores",
 			"mainBg": "/assets/post-background2.jpg",
 			"category": ["Tech", "Life"],
-			"profileImg": "/assets/profile.jpg",
+			"profileImg": "/assets/images/profile.jpg",
 			"contents": [
 				{
 					"type": "p",
@@ -135,7 +135,7 @@
 		},
 		{
 			"id": 6,
-			"thumbnail": "/assets/post-img6.jpg",
+			"thumbnail": "/assets/images/post-img6.jpg",
 			"title": "Lorem, ipsum dolor sit amet consectetur adipisicing elit.",
 			"mainBg": "/assets/post-background6.jpg",
 			"category": ["Life", "Style"],
