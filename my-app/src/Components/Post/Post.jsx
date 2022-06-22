@@ -7,7 +7,7 @@ import { Link } from "react-router-dom";
 export default function Post(props) {
   
   return (
-    <li>
+    <li key={props.key}>
       <Link to ="/view" className="post">
         <article>
           <img src={props.thumbnailSrc} alt="썸네일" />

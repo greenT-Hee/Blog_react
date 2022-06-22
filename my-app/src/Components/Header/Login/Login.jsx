@@ -4,13 +4,13 @@ import { useState } from 'react'
 import WriteButton from '../WriteButton/WriteButton'
 
 
-export default function Login() {
+export default function Login(props) {
     return (
-        <li id="login">
+        <li id="login" onClick={props.handleLogin}>
             <a href="#" className="button gray">
                 <img src={LoginIcon} alt="로그인" />
                 <span>Login</span>
             </a>
-        </li>  
+        </li> 
     )
 }

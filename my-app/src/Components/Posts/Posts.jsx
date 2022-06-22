@@ -12,7 +12,7 @@ export default function Posts() {
       return res.json()
     })
     .then(data => {
-     setPost(data.posts)
+        setPost(data.posts)
     })
   },[])
     return (

@@ -4,10 +4,11 @@ import Main from "../Components/Main/Main"
 import Footer from "../Components/Footer/Footer"
 // import { useEffect } from "react"
 
-export default function Homepage() {
+export default function Homepage(props) {
+  
   return (
     <>
-        <Header />
+        <Header isLogin={props.isLogin} handleLogin = {props.handleLogin}/>
         <Banner />
         <Main />
         <Footer />
