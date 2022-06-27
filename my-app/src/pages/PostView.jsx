@@ -6,17 +6,17 @@ import PostArticle from '../Components/PostArticle/PostArticle'
 import { useEffect, useState } from 'react'
 
 export default function PostView(props) {
-  const [dummy, setDummy] = useState([])
-	useEffect(()=>{
-		fetch("https://greent-hee.github.io/Blog_react/my-app/public/data.json")
-		.then(res => {
-		return res.json()
-		})
-		.then(data => {
-      setDummy(data.posts[0].category)
-		})
-	},[])
-
+  // const [dummy, setDummy] = useState([])
+	// useEffect(()=>{
+	// 	fetch("https://greent-hee.github.io/Blog_react/my-app/public/data.json")
+	// 	.then(res => {
+	// 	return res.json()
+	// 	})
+	// 	.then(data => {
+  //     setDummy(data.posts[0].category)
+	// 	})
+	// },[])
+console.log("postView",props.post)
   return (
     <>
         <Header           
@@ -25,7 +25,7 @@ export default function PostView(props) {
         />
         <ViewBanner/>
         <PostArticle 
-          category={dummy}
+          post={props.post}
         />
         <Footer />
     </>

@@ -1,11 +1,12 @@
 import "./category.css"
 
-export default function Category({category}) {
+export default function Category(props) {
     return (
         <dl className="category">
             <dt className="a11y-hidden">Category</dt>
-            <dd>{category[0]}</dd>
-            <dd>{category[1]}</dd>
+            {props.category.map(item => {
+                return  <dd key={item.id}>{item}</dd>
+            })}
         </dl>
     )
 }

@@ -5,9 +5,6 @@ import Register from './Resgiter/Register'
 import Logout from './Logout/Logout'
 import Login from './Login/Login'
 import './header.css'
-import { useState } from 'react'
-
-
 
 export default function Header(props) {
   return (

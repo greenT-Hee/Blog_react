@@ -1,6 +1,14 @@
 import "./title.css"
+// import { useState } from "react"
 
 export default function Title() {
+    // const [btnColor,setBtnColor] = useState("var(--red-color)")
+    // const [btnBackColor,setBtnBackColor]= useState("var(--white-color)")
+    // function handleChangeColor(){
+    //     setBtnBackColor("var(--red-color)")
+    //     setBtnColor("var(--white-color)")
+    // }
+
     return (
         <>
             <div className='title-wrap'>

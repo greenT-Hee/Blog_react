@@ -45,6 +45,7 @@ function App() {
 						<PostView
 						isLogin = {isLogin}
 						handleLogin = {handleLogin}
+						post = {post}
 						/>
 				}
 			/>

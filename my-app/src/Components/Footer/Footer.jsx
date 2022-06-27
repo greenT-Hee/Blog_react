@@ -1,6 +1,7 @@
 import "./footer.css"
 
 export default function Footer() {
+    const header = document.querySelector('header');
     return (
         <footer>
             <div className="max-width">
