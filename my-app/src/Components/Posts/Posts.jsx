@@ -1,24 +1,13 @@
 import "./posts.css"
 import Post from "../Post/Post"
-import { useEffect , useState  } from "react"
+// import { useEffect , useState  } from "react"
 // import { Data } from "../../data"
 
-export default function Posts() {
-  const [post, setPost] = useState([])
-
-  useEffect(()=>{
-    fetch("https://greent-hee.github.io/Blog_react/my-app/public/data.json")
-    .then(res => {
-      return res.json()
-    })
-    .then(data => {
-        setPost(data.posts)
-    })
-  },[])
+export default function Posts(props) {
     return (
       <ul className="posts">
         {
-          post.map(item => {
+          props.post.map(item => {
           return <Post 
             key = {item.id}
             thumbnailSrc = {item.thumbnail}

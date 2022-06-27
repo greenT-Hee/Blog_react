@@ -2,17 +2,17 @@ import './postArticle.css'
 import Contents from './Contents/Contents'
 import Author from './Author/Author'
 import Title from './Title/Title'
-import Category from './Category/Category'
+import Category from '../Category/Category'
 import { Link } from 'react-router-dom'
 
-export default function PostArticle() {
-  return (
+export default function PostArticle(props) {
+    return (
     <div className='view'>
         <div className='max-width'>
             <section className='wrap-box'>
                 <div className='inner'>
                     <Author />
-                    <Category />                    
+                    <Category category={props.post[0].category}/>
                     <Title />
                     <Contents />
                     <div className='btn-group'>

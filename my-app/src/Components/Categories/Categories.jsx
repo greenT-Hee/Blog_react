@@ -10,7 +10,6 @@ export default function Categories() {
       return res.json()
     })
     .then(data=> {
-      // console.log(data.users[0].category)
       setCategories(data.users[0].category)
     })
   })
