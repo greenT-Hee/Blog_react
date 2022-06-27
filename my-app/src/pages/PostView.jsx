@@ -3,14 +3,30 @@ import Header from '../Components/Header/Header'
 import Footer from '../Components/Footer/Footer'
 import ViewBanner from '../Components/Banner/ViewBanner'
 import PostArticle from '../Components/PostArticle/PostArticle'
+import { useEffect, useState } from 'react'
 
 export default function PostView(props) {
-  console.log("postView", props.post)
+  const [dummy, setDummy] = useState([])
+	useEffect(()=>{
+		fetch("https://greent-hee.github.io/Blog_react/my-app/public/data.json")
+		.then(res => {
+		return res.json()
+		})
+		.then(data => {
+      setDummy(data.posts[0].category)
+		})
+	},[])
+
   return (
     <>
-        <Header />
+        <Header           
+          isLogin={props.isLogin}
+          handleLogin={props.handleLogin}
+        />
         <ViewBanner/>
-        <PostArticle post={props.post}/>
+        <PostArticle 
+          category={dummy}
+        />
         <Footer />
     </>
   )

@@ -1,4 +1,4 @@
-import { Link } from 'react'
+import { Link } from 'react-router-dom'
 import './buttons.css'
 
 export default function Buttons() {

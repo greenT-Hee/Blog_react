@@ -10,13 +10,13 @@ function App() {
 	const [post, setPost] = useState([])
 
 	useEffect(()=>{
-	  fetch("https://greent-hee.github.io/Blog_react/my-app/public/data.json")
-	  .then(res => {
+		fetch("https://greent-hee.github.io/Blog_react/my-app/public/data.json")
+		.then(res => {
 		return res.json()
-	  })
-	  .then(data => {
-		  setPost(data.posts)
-	  })
+		})
+		.then(data => {
+			setPost(data.posts)
+		})
 	},[])
 
 	const [isLogin, setLogin] = useState(false)
@@ -43,7 +43,8 @@ function App() {
 				render = {
 					() => 
 						<PostView
-						post = {post}
+						isLogin = {isLogin}
+						handleLogin = {handleLogin}
 						/>
 				}
 			/>
