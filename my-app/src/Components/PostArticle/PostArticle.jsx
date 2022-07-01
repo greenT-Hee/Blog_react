@@ -8,17 +8,13 @@ import Buttons from './Buttons/Buttons'
 
 export default function PostArticle(props) {
     console.log("postArticle",props.post)
-    return (
+    return ( 
     <div className='view'>
         <div className='max-width'>
             <section className='wrap-box'>
                 <div className='inner'>
                     <Author />
-                    {props.post.map((item,index)=> {
-                        return <Category category={item.category} key={item.id}/>
-                    })
-                    }
-                    <Category category={props.post}/>
+                    {/* <Category category={props.post[0].category}/> */}
                     <Title />
                     <Contents />
                     <Buttons />

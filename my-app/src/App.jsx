@@ -5,7 +5,6 @@ import '../src/styles/global.css'
 import PostView from "./pages/PostView";
 import { useState, useEffect } from 'react'
 
-
 function App() {
 	const [post, setPost] = useState([])
 

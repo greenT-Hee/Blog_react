@@ -4,18 +4,9 @@ import Footer from '../Components/Footer/Footer'
 import ViewBanner from '../Components/Banner/ViewBanner'
 import PostArticle from '../Components/PostArticle/PostArticle'
 import { useEffect, useState } from 'react'
+import { useParams } from 'react-router-dom'
 
 export default function PostView(props) {
-  // const [dummy, setDummy] = useState([])
-	// useEffect(()=>{
-	// 	fetch("https://greent-hee.github.io/Blog_react/my-app/public/data.json")
-	// 	.then(res => {
-	// 	return res.json()
-	// 	})
-	// 	.then(data => {
-  //     setDummy(data.posts[0].category)
-	// 	})
-	// },[])
 console.log("postView",props.post)
   return (
     <>
