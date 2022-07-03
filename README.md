@@ -1,5 +1,5 @@
 # React Blog
-<img src = "https://user-images.githubusercontent.com/101693495/177020669-1c436bc0-c794-408a-92b8-935f4fee73c5.PNG" >
+<img src = "https://user-images.githubusercontent.com/101693495/177041924-647e33f8-67d5-484c-84bb-664d1087394e.gif" >
 
 <br>
 
@@ -30,4 +30,4 @@ React로 Single Page Application을 구현하는 블로그 구현 과제입니�
 3. 컴포넌트를 map을 사용하여 user 정보를 뿌리는 연습 
 
 ## 아쉬운 점
-1. params 학습이 덜 되어서 여러 viewPost 페이지를 생성 실패 
+1. params 학습이 부족하여 여러 viewPost 페이지를 생성 실패 
