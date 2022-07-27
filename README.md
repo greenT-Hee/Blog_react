@@ -4,7 +4,7 @@
 <br>
 
 ## 프로젝트 소개 
-React로 Single Page Application을 구현하는 블로그 구현 과제입니다. 
+React로 Single Page Application을 구현하는 블로그 구현 프로젝트입니다. 
 
 <br>
 
